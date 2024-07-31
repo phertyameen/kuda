@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kuda by Fatima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            font-size: 14px !important;
+        }
+
+        header {
+            width: 100%;
+            height: 64px;
+            position: fixed !important;
+            top: 0;
+            /* box-shadow: 0 1px 5px 1px #f6f3f9, 0 1px 5px 1px #f5f4f6; */
+        }
+
+        .navBg {
+            background-color: #fff !important;
+        }
+
+        .marginEnd {
+            margin-right: 50px;
+        }
+
+        .purpleColor {
+            color: #40196D !important;
+        }
+
+        .Yellowcolor {
+            color: #FFC83E
+        }
+
+        .whiteColor {
+            color: #fff;
+        }
+
+        .purpleBgColor {
+            background: #40196D !important;
+        }
+
+        .navMaxWidth {
+            max-width: 1380px;
+        }
+
+        #pDivFChild {
+            width: 22px;
+            height: 22.15px;
+        }
+
+        .pDivChild {
+            width: 50px;
+            height: 16px;
+            margin-left: 10px;
+        }
+
+        .pDivChild img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .imageDiv {
+            width: 100% !important;
+            height: 390px !important;
+        }
+
+        .imageDiv img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .mainFooter {
+            height: 80px;
+            background-color: #eff1ff;
+        }
+
+        @media screen and (max-width: 991px) {
+            .bgVisible {
+                padding-block: 1rem;
+                background-color: white !important;
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bgVisible ul {
+                width: 100%;
+                /* display: block; */
+            }
+
+            .bgVisible ul li {
+                padding-block: 1rem;
+                border-bottom: 1px solid #e8e7e9;
+            }
+
+            .dropdown-toggle::after {
+                position: absolute;
+                right: 0;
+                transform: translateY(-50%)
+            }
+
+            .imageDiv {
+                width: 100% !important;
+                height: 400px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 h-100 mx-auto shadow-sm navMaxWidth navBg">
+            <div class="container-fluid">
+                <a class="navbar-brand marginEnd" href="#">
+                    <img src="./img/navLogo.png" alt="kuda logo">
+                </a>
+                <div class="d-flex align-items-center">
+                    <div class="ngLogoDiv mx-2 d-lg-none">
+                        <img src="./img/ngFlag.png" alt="Nigerian flag">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse bgVisible" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 order-2 order-lg-1 fw-bolder">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle purpleColor" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Personal
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle purpleColor" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Business
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle purpleColor" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Company
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle purpleColor" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex order-1" role="search">
+                        <button type="button" class="btn marginEnd purpleColor">Sign In</button>
+                        <button class="btn whiteColor purpleBgColor" type="submit">Search</button>
+                    </form>
+                    <div class="ngLogoDiv mx-4 d-none d-lg-block d-lg-block order-lg-3">
+                        <img src="./img/ngFlag.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center my-5">
+                <div class=" w-100 w-md-50 mx-lg-5">
+                    <div class="w-100 w-md-25">
+                        <h1 class="purpleColor">The money app for Africans.</h1>
+                        <p>Make free transfers, enjoy cashless payment
+                            options and earn interest on your savings with
+                            Kuda.</p>
+                    </div>
+                    <div>
+                        <img src="./img/appStoreImg.png" alt="">
+                        <img src="./img/googlePlayImg.png" alt="">
+                    </div>
+                    <div class="d-flex g-2 pDiv mt-3">
+                        <p>
+                            <span>Fully Licensed by the CBN</span>
+                        <div class="pDivChild" id="pDivFChild">
+                            <img class="w-100" src="./img/cbnLogo.png" alt="coart of arms img">
+                        </div>
+                        </p>
+                        <p>
+                            <span>Deposits Insured by</span>
+                        <div class="pDivChild">
+                            <img src="./img/ndicLogo.png" alt="ndic img">
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-75 w-lg-50 mx-auto mx-md-0 me-md-auto">
+                    <img class="w-100" src="./img/phoneontainer.png" alt="">
+                </div>
+            </div>
+            <div class="container row g-5 justify-content-center w-md-100 mx-auto my-4 fw-bolder purpleColor">
+                <div class="col-lg-4 col-md-6 p-4 rounded-3 shadow-sm d-flex flex-md-column">
+                    <div class="innercircle mb-md-3 me-4 me-md-0">
+                        <img src="./img/visaCard.png" alt="Visa Card">
+                    </div>
+                    <p>Order a Kuda Visa card on the app with pickup and delivery options.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 p-4 rounded-3 shadow-sm d-flex flex-md-column">
+                    <div class="innercircle mb-md-3 me-4 me-md-0">
+                        <img src="./img/quarter.png" alt="quarter">
+                    </div>
+                    <p>Enjoy cashless payment options online and offline.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 p-4 rounded-3 shadow-sm d-flex flex-md-column">
+                    <div class="innercircle mb-md-3 me-4 me-md-0">
+                        <img src="./img/weight.png" alt="weight">
+                    </div>
+                    <p>Pay your essential bills and buy gift cards easily.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 p-4 rounded-3 shadow-sm d-flex flex-md-column">
+                    <div class="innercircle mb-md-3 me-4 me-md-0">
+                        <img src="./img/transfer.png" alt="transfer">
+                    </div>
+                    <p>Get 25 free transfers to Nigerian banks every month.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 p-4 rounded-3 shadow-sm d-flex flex-md-column">
+                    <div class="innercircle mb-md-3 me-4 me-md-0">
+                        <img src="./img/piggySave.png" alt="">
+                    </div>
+                    <p>Save money automatically any time you spend.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center g-5 my-5">
+                <div class="text-center text-lg-start m-5">
+                    <h2 class="purpleColor fw-bolder mb-2 fs-2 lh-sm">Your phone +<br>
+                        our app +<br>
+                        a debit card =<br>
+                        a simpler life.</h2>
+                    <p>We designed a money app for your lifestyle, and you can get a debit card to go with it. That's
+                        all you need to make the right money moves.</p>
+                    <a href="#" class="purpleColor fw-bold mt-3">Open An Account in Minutes
+                        <i class="fa-solid fa-chevron-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="m-5 imageDiv">
+                    <img src="./img/relaxImg.png" alt="anim of relaxation">
+                </div>
+            </div>
+            <div
+                class="container d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center g-5 my-5">
+                <div class="text-center text-lg-start m-5">
+                    <h2 class="purpleColor fw-bolder mb-2 fs-2 lh-sm w-lg-50">It’s your money, we <br>just help you
+                        <br>manage it.</h2>
+                    <p class="w-75">Save it, spend it, send it. It’s up to you. Whatever you choose to do with your
+                        money, we’ll make sure it’s done better and free of charge. We take responsibility for that.</p>
+                </div>
+                <div class="m-5 imageDiv">
+                    <img src="./img/processesImg.png" alt="services offered">
+                </div>
+            </div>
+            <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center g-5 my-5">
+                <div class="text-center text-lg-start m-5">
+                    <h2 class="purpleColor fw-bolder mb-2 fs-2 lh-sm">Save money as you spend it, seriously.</h2>
+                    <p>You can’t avoid spending. That’s how you pay for your needs. But we can help you put money away
+                        every time you pay for something. Just set a percentage to save and watch your money grow.</p>
+                    <a href="#" class="purpleColor fw-bold mt-3">See all our Savings
+                        <i class="fa-solid fa-chevron-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="m-5 imageDiv">
+                    <img src="./img/spend+save.png" alt="spending image">
+                </div>
+            </div>
+            <div
+                class="container d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center g-5 my-5">
+                <div class="text-center text-lg-start m-5">
+                    <h2 class="purpleColor fw-bolder mb-2 fs-2 lh-sm">Turn off access, turn on safety.</h2>
+                    <p>Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your
+                        missing card on the app so no one can use it. We’d like to see them try.</p>
+                    <a href="#" class="purpleColor fw-bold mt-3">Learn more about Cards
+                        <i class="fa-solid fa-chevron-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="m-5 imageDiv">
+                    <img src="./img/kudaCard.png" alt="Hello Imag">
+                </div>
+            </div>
+            <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center g-5 my-5">
+                <div class="text-center text-lg-start m-5">
+                    <h2 class="purpleColor fw-bolder mb-2 fs-2 lh-sm">Fees as clear as glass.</h2>
+                    <p>We’re serious about free banking, and we will never, ever charge you for anything without your
+                        consent.</p>
+                    <a href="#" class="purpleColor fw-bold mt-3">See all our fees
+                        <i class="fa-solid fa-chevron-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="m-5 imageDiv">
+                    <img src="./img/helloImg.png" alt="Hello image">
+                </div>
+            </div>
+            <div
+                class="container d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center g-5 my-5">
+                <div class="text-center text-lg-start m-5">
+                    <h2 class="purpleColor fw-bolder mb-2 fs-2 lh-sm">Turn off access, turn on safety.</h2>
+                    <p>Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your
+                        missing card on the app so no one can use it. We’d like to see them try.</p>
+                    <a href="#" class="purpleColor fw-bold mt-3">Learn more about Cards
+                        <i class="fa-solid fa-chevron-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="m-5 imageDiv">
+                    <img src="./img/glassImg.png" alt="Hello Imag">
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <h2 class="purpleColor fw-bolder my-5 fs-2 lh-sm">Don’t just take our word for it</h2>
+            </div>
+        </section>
+        <div
+            class="container-fluid p-3 position-fixed bottom-0 d-md-none d-flex align-items-center justify-content-between mainFooter">
+            <div class="d-flex align-items-center h-100">
+                <div class="h-100 me-3">
+                    <img src="./img/kudaLogo.png" class="h-100" alt="">
+                </div>
+                <div>
+                    <h6 class="purpleColor fw-bolder mb-1 lh-1">Kuda</h6>
+                    <div class="Yellowcolor">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn whiteColor purpleBgColor rounded-3 btn-no-border btn-no-shadow" type="submit">Get the
+                    App</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
